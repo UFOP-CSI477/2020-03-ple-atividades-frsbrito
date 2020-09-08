@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Existence-Light';
+    src: url('fonts/Existence-Light.otf');
+}
+
+body {
+    background-color:rgb(209, 209, 209);
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;    
+    margin-top: 3em;
+    font-family: 'Existence-Light';
+}
+
+.corpo h1{
+    margin: 0;
+    font-size: 3.45em;
+    color: rgb(85, 81, 81);
+    text-shadow: 0.05em 0.05em lavenderblush;
+}
+
+.corpo img{
+    height: 28em;
+    width: 42em;
+}
+
+.navegacao {
+    display: inline-block;
+    margin-top: 1.5em;
+    margin-left:15em;
+}
+
+.navegacao a {
+    line-height: 1.5em;
+    font-size: 2em;
+    text-decoration: none;
+    color: rgb(139, 139, 139);
+    letter-spacing: 0.06em;
+    text-shadow: 0.05em 0.05em lavenderblush;
+}
+
+.navegacao a:hover {
+    color: rgb(58, 57, 57);
+    width:105%;
+}
+
+.navegacao a:active {
+    font-weight: bold;
+}
+
+.navegacao img {
+    height: 2em;
+    width: 2em;
+    margin-bottom: -0.4em;
+    margin-right: 0.5em;
+    filter: invert(45%) ;
+}
+
+.botoes-cabecalho{
+    margin-left: 42em;
+    display: flex;
+    flex-flow: row;
+}
+
+.botoes-cabecalho a{
+    margin-top: -2.5em;
+    margin-left: 1em;
+    font-size: 1em;
+    color: rgb(87, 87, 87);
+    letter-spacing: 0.06em;
+    text-shadow: 0.05em 0.05em lavenderblush;
+}
+
+.botoes-cabecalho li{
+    list-style: none;
+    float: left;
+}

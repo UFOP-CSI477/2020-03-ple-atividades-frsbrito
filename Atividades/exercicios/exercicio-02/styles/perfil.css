@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Existence-Light';
+    src: url('fonts/Existence-Light.otf');
+}
+
+body {
+    background-color:rgb(209, 209, 209);
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Existence-Light';
+}
+
+.botoes-cabecalho{
+    margin-left: 33em;
+    display: flex;
+    flex-flow: row;
+}
+ 
+.botoes-cabecalho a{
+    margin-left: 1em;
+    font-size: 1.5em;
+    color: rgb(87, 87, 87);
+    letter-spacing: 0.06em;
+    text-shadow: 0.05em 0.05em lavenderblush;
+}
+
+.botoes-cabecalho li{
+    list-style: none;
+    float: left;
+}
+
+.perfil h1{
+    font-size: 3.45em;
+    color: rgb(85, 81, 81);
+    text-shadow: 0.05em 0.05em lavenderblush;
+}
+
+.perfil h2{
+    font-size: 1.9em;
+    color: rgb(85, 81, 81);
+    text-shadow: 0.05em 0.05em lavenderblush;
+}
+
+.perfil {
+    /* background-color: red; */
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+.perfil img {
+    margin-left: 53.5em;
+    width: 10%;
+    height: 30%;
+    border-radius: 70%;
+}
+
+footer {
+    margin-top: 5em;
+    margin-left: 38.5em;
+    font-size: 1.5em;
+    color: rgb(87, 87, 87);
+    letter-spacing: 0.06em;
+    text-shadow: 0.05em 0.05em lavenderblush;
+}
+
+.voltar:hover {
+    color: rgb(58, 57, 57);
+    width:105%;
+}
+
+a:hover {
+    color: rgb(255, 0, 200);
+    width:105%;
+}
