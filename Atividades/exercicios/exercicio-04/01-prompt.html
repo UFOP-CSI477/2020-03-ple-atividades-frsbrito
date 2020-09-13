@@ -21,18 +21,12 @@
             
             const pessoa = new Pessoa(nome, idade, time);
 
-            // document.getElementById("data").innerHTML = Date();
             document.getElementById("dados").innerHTML = pessoa.nome + "<br>" + pessoa.idade + "<br>" + pessoa.time;
         }
     </script>
 
 </head>
 <body>
-    <!-- <script src="01-prompt.js"></script> -->
-    <script>
-        // document.write('Olá');
-    </script>
-
     <div id=dados></div>
 
     <input type="button" value="Carregar" onclick="carregarDados()">

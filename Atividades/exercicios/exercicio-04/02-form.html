@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <title>Prompt JS</title>
+    <script>
+        'use strict'
+
+        function Pessoa(nome, idade, time) {
+            this.nome = nome;
+            this.idade = idade;
+            this.time = time;
+        }
+
+        function carregarDados() {
+
+            const nome = window.prompt("Qual o seu nome? ");
+            const idade = window.prompt("Qual a sua idade? ");
+            const time = window.prompt("Qual seu time do coração?")
+            
+            const pessoa = new Pessoa(nome, idade, time);
+
+            // document.getElementById("data").innerHTML = Date();
+            document.getElementById("dados").innerHTML = pessoa.nome + "<br>" + pessoa.idade + "<br>" + pessoa.time;
+        }
+
+        function carregarDadosDoForm() {
+            const nome = document.frmDados.nome.value;
+            const idade = document.frmDados.idade.value;
+            const time = document.frmDados.time.value;
+            
+            const pessoa = new Pessoa(nome, idade, time);
+
+            document.getElementById("dados").innerHTML = pessoa.nome + "<br>" + pessoa.idade + "<br>" + pessoa.time;
+
+            window.alert("Dados carregados com sucesso! \n" + "\nNome: " + pessoa.nome + "\nIdade: " + pessoa.idade + "\nTime do coração: " + pessoa.time);
+        }
+        
+        function atualizarHora(){
+            setInterval(mostrarHora);
+        }
+
+        function mostrarHora(){
+            const hora = Date();
+            document.getElementById("hora").innerHTML = hora;
+        }
+    </script>
+
+</head>
+<body>
+
+    <div id=dados></div>
+
+    <h1>Prompt de dados</h1>
+
+    <form action="post" name="frmDados">
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome">
+        <br>
+        <br>
+        <label for="idade">Idade: </label>
+        <input type="text" name="idade">
+        <br>
+        <br>
+        <label for="time">Time do coração: </label>
+        <input type="text" name="time">
+        <br>
+        <br>
+    </form>
+
+    <input type="button" value="Carregar" onclick="carregarDados()">
+    <input type="button" value="Carregar do formulário" onclick="carregarDadosDoForm()">
+</body>
+</html>
