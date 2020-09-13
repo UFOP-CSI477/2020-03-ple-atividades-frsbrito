@@ -28,33 +28,50 @@ header {
     float: left;
 }
 
-.perfil {
-    /* background-color: red; */
-    display: flex;
-    align-items: center;
-    flex-flow: column;
-    margin-top: 1em;
+table {
+    margin-top: 3em;
+    width: 100%;
 }
 
-.perfil h1{
-    font-size: 3.45em;
-    color: rgb(85, 81, 81);
-    text-shadow: 0.05em 0.05em lavenderblush;
+table, th, td {
+    border: 1px solid rgb(51, 51, 51);
+    border-collapse: collapse;
 }
 
-.perfil h2{
-    font-size: 1.9em;
-    color: rgb(85, 81, 81);
-    text-shadow: 0.05em 0.05em lavenderblush;
+th, td {
+    padding: 10px;
 }
 
-.perfil img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10em;
-    height: 10em;
-    border-radius: 70%;
+
+th {
+    font-size: 14pt;
+    font-family: Tahoma;
+}
+
+tbody tr:hover {
+    background-color: rgb(255, 185, 239);
+}
+
+thead tr:hover {
+    background-color: rgb(255, 113, 222);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(161, 161, 161);
+}
+
+tbody tr:nth-child(odd):hover{
+    background-color: rgb(255, 107, 220);
+}
+
+tbody tr td {
+    text-align: center;
+}
+
+caption {
+    font-size: 20pt;
+    font-family: Tahoma;
+    font-weight: bold;
 }
 
 .voltar{

@@ -28,35 +28,6 @@ header {
     float: left;
 }
 
-.perfil {
-    /* background-color: red; */
-    display: flex;
-    align-items: center;
-    flex-flow: column;
-    margin-top: 1em;
-}
-
-.perfil h1{
-    font-size: 3.45em;
-    color: rgb(85, 81, 81);
-    text-shadow: 0.05em 0.05em lavenderblush;
-}
-
-.perfil h2{
-    font-size: 1.9em;
-    color: rgb(85, 81, 81);
-    text-shadow: 0.05em 0.05em lavenderblush;
-}
-
-.perfil img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10em;
-    height: 10em;
-    border-radius: 70%;
-}
-
 .voltar{
     margin-top: 3em;
     display: flex;
