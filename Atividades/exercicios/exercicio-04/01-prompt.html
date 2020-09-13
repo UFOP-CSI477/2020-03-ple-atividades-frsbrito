@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <title>Prompt JS</title>
+
+    <script>
+        'use strict'
+
+        function Pessoa(nome, idade, time) {
+            this.nome = nome;
+            this.idade = idade;
+            this.time = time;
+        }
+
+        function carregarDados() {
+
+            const nome = window.prompt("Qual o seu nome? ");
+            const idade = window.prompt("Qual a sua idade? ");
+            const time = window.prompt("Qual seu time do coração?")
+            
+            const pessoa = new Pessoa(nome, idade, time);
+
+            // document.getElementById("data").innerHTML = Date();
+            document.getElementById("dados").innerHTML = pessoa.nome + "<br>" + pessoa.idade + "<br>" + pessoa.time;
+        }
+    </script>
+
+</head>
+<body>
+    <!-- <script src="01-prompt.js"></script> -->
+    <script>
+        // document.write('Olá');
+    </script>
+
+    <div id=dados></div>
+
+    <input type="button" value="Carregar" onclick="carregarDados()">
+
+</body>
+</html>
